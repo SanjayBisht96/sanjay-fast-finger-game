@@ -18,7 +18,6 @@ const Game = dynamic(() => import('../components/Game'));
 const Button = dynamic(() => import('../components/Button')); 
 
 export default function InGame() {
-
     const {time, setTime, timerOn, setTimerOn } = useTime(0);
     const {score, setScore, scoreList, setScoreList, scoringOn, setScoringOn } = useScore(true,0);
     const { userName } = useUserName();
